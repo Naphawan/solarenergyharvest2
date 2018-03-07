@@ -1,31 +1,124 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Apps</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @apps.each do |app| %>
-      <tr>
-        <td><%= app.Firstname %></td>
-        <td><%= app.Lastname %></td>
-        <td><%= app.description %></td>
-        <td><%= link_to 'Show', app %></td>
-        <td><%= link_to 'Edit', edit_app_path(app) %></td>
-        <td><%= link_to 'Destroy', app, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
 <br>
+<h2>SOLAR ENERGY HARVESTING with LIGHT EMITTING DIODE II</h2>
+<h3 id="date"></h3>
+<body>
+<div class="row">
+  <div class="col col-6">
+    <h4>Voltage</h4>
+  </div>
+  <div class="col col-6">
+      <canvas id="mycanvas"  width="200px" height="80px"></canvas>
+  </div>
+</div>
 
-<%= link_to 'New App', new_app_path %>
+<div class="row">
+  <div class="col col-6">
+    <h4>Current</h4> 
+  </div>
+  <div class="col col-6">
+      <canvas id="mycanvas2"  width="200px" height="80px"></canvas>
+  </div>
+</div>
+</body>
+
+<script> 
+  var T = ['0:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00', '7:00', '8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00', '24:00'];
+  var config = {
+    type: 'line',
+    data: {
+      labels: T,
+      datasets: [{
+        label: 'Voltage',
+        backgroundColor: "#00f",
+        borderColor: "#00f",
+        data: [
+          11,22,13,7,9,5,13,23,21,34,22,12,13,18,7,19,43,11,23,7,8,24,21,12,22
+        ],
+        fill: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        text: 'Voltage'
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Time'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Voltage(v)'
+          }
+        }]
+      }
+    }
+  };
+  var config2 = {
+    type: 'line',
+    data: {
+      labels: T,
+      datasets: [{
+        label: 'Current',
+        backgroundColor: "#f00",
+        borderColor: "#f00",
+        data: [
+          11,22,13,7,9,5,13,23,21,34,13,23,21,34,22,12,33,22,11,22,33,12,43,11,2
+        ],
+        fill: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        text: 'Current'
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Time'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Voltage(v)'
+          }
+        }]
+      }
+    }
+  };
+
+  var ctx = document.getElementById('mycanvas').getContext('2d');
+  window.myLine = new Chart(ctx, config);
+  var ctx2 = document.getElementById('mycanvas2').getContext('2d');
+  window.myLine = new Chart(ctx2, config2);
+  
+</script>  

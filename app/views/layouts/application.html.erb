@@ -3,12 +3,68 @@
   <head>
     <title>My Web</title>
     <%= csrf_meta_tags %>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'  %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">MY PROJECT</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <span class="nav-link" id="timenav"></span>
+                 
+                  </li>
+                <li class="nav-item active">
+                  <%= link_to "<span class='nav-link'>Home</span>".html_safe, index_path %>
+                  </li>
+              <li class="nav-item  active">
+                <%= link_to "<span class='nav-link'>Control</span>".html_safe, control_path %>
+                </li>
+              <li class="nav-item  active ">
+                <%= link_to "<span class='nav-link'>Statistics</span>".html_safe, statistics_path %>
+              </li>
+              <li class="nav-item  active">
+                <%= link_to "<span class='nav-link'>About Project</span>".html_safe, about_path %>
+                
+              </li>
+              
+            </ul>
+           
+          </div>
+        </nav>
+    <br>
+    <div class="container-fluid">
+        <%= yield %>
+
+    </div>
+    
+    <script>
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+      if(dd<10) {
+        dd='0'+dd
+      } 
+
+      if(mm<10) {
+        mm='0'+mm
+      } 
+      today = mm+'/'+dd+'/'+yyyy;
+      document.getElementById("date").innerHTML = today;
+      var myVar=setInterval(function(){myTimer()},1000);
+      function myTimer() {
+        var d = new Date();
+        document.getElementById("timenav").innerHTML = d.toLocaleTimeString();
+      }
+    </script>
   </body>
 </html>

@@ -60,7 +60,19 @@ class AppsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def about
 
+  end 
+
+  def control
+
+  end
+
+  def statistics
+ 
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_app
