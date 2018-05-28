@@ -4,7 +4,7 @@ class AppsController < ApplicationController
   # GET /apps
   # GET /apps.json
   def index
-    @apps = App.where("DATE(created_at) = ?", Date.today).where('id % ? = 1',60)
+    @apps = App.where("DATE(created_at) = ?", Date.today)#.where('id % ? = 1',60)
     @value = App.order(created_at: :desc).take(1)
 
   end

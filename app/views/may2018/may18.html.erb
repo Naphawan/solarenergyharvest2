@@ -278,12 +278,12 @@
       }
     }
   };
-  var T1 = [<% for app in @searchmay19%>"<%= app.created_at.strftime("%I:%M %p") %>",<%end%>];
+  var T1 = [<% for app in @searchmay18%>"<%= app.created_at.strftime("%I:%M %p") %>",<%end%>];
   var config1volt = {
     type: 'line',
     data: {
       labels: T1,
-      datasets: [{label: 'Voltage', backgroundColor: "#11a", borderColor: "#11a",data: [<% for app in @searchmay19%><%= app.Voltage %>,<%end%>],fill: false,}]
+      datasets: [{label: 'Voltage', backgroundColor: "#11a", borderColor: "#11a",data: [<% for app in @searchmay18%><%= app.Voltage %>,<%end%>],fill: false,}]
     },
     options: {responsive: true,scales: {
         xAxes: [{display: true,scaleLabel: {display: true,labelString: 'Time'}}],
@@ -295,7 +295,7 @@
     type: 'line',
     data: {
       labels: T1,
-      datasets: [{label: 'Current',backgroundColor: "#a11",borderColor: "#a11", data: [<% for app in @searchmay19%><%= app.Current %>,<%end%>],fill: false,}]
+      datasets: [{label: 'Current',backgroundColor: "#a11",borderColor: "#a11", data: [<% for app in @searchmay18%><%= app.Current %>,<%end%>],fill: false,}]
     },
     options: {responsive: true,scales: {
         xAxes: [{display: true,scaleLabel: {display: true,labelString: 'Time'}}],

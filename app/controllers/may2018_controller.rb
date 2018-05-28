@@ -63,7 +63,7 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay1 = App.where("created_at LIKE '%2018-05-01%'").order(created_at: :asc
+    @searchmay1 = App.where("created_at LIKE '%2018-05-01%'").order(created_at: :asc)
       # ).where('id % ? = 1',60)
   end
   def may2
