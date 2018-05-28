@@ -1,0 +1,277 @@
+
+<script type="text/javascript" src="http://iop.io/js/vendor/d3.v3.min.js"></script>
+<script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerEvents/pointerevents.js"></script>
+<script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerGestures/pointergestures.js"></script>
+<script type="text/javascript" src="http://iop.io/js/iopctrl.js"></script>
+<script type="text/javascript" src="http://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+<div class="row">
+  <div class="col col-12">
+    <%= image_tag  "sun.png", height: '45', width: '45' %>
+    <div class="daytime">
+      <span id="date"></span>
+      <span id="timenav"></span>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <center>
+      <div class="col col-4">
+        <select class="form-control" id="month">
+          <option value="select">Select month...</option>
+          <option value="history">DECEMBER 2018</option>
+          <option value="january2018">JANUARY 2018</option>
+          <option value="february2018">FEBRUARY 2018</option>
+          <option value="march2018">MARCH 2018</option>
+          <option value="april2018">APRIL 2018</option>
+          <option value="may2018">MAY 2018</option>
+          <option value="june2018" selected>JUNE 2018</option>
+          <option value="july2018">JULY 2018</option>
+          <option value="august2018">AUGUST 2018</option>
+          <option value="september2018">SEPTEMBER 2018</option>
+          <option value="october2018">OCTOBER 2018</option>
+          <option value="november2018">NOVEMBER 2018</option>
+          <option value="december2018">DECEMBER 2018</option>
+        </select>
+        <br>
+      </div>
+    </center>
+  </div>
+</div>
+<br>
+<!--<div class="row">
+    <div class="col">
+        <center>
+            <span>
+                <p class="value1">JUNE 2017</p>
+            <span>
+        </center>
+    </div>
+</div>-->
+<br>
+
+<div class="row">
+    <div class= "col" >
+        <canvas id="mycanvas"  width="100px" height="50px"></canvas>
+    </div>
+    <div class= "col" >
+        <canvas id="mycanvas2"  width="100px" height="50px"></canvas>
+    </div>
+</div>
+
+<br>
+
+<!--Table-->
+<div class="row">
+<!--Table day-->
+  <div class="col col-sm-6">
+      <center>
+          <div>
+              <table class="table table-hover table-striped">
+                  <thead class="thead-dark">
+                      <tr>
+                          <th>Date</th>
+                          <th>AVG Voltage (v)</th>
+                          <th>AVG Current (mA)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr><td>1</td><td><% junvolt1 = @junvolt1 %><%= junvolt1%></td><td><% juncur1 = @juncur1 %><%= juncur1%></td></tr>
+                      <tr><td>2</td><td><% junvolt2 = @junvolt2  %><%= junvolt2%></td><td><% juncur2 = @juncur2 %><%= juncur2%></td></tr>
+                      <tr><td>3</td><td><% junvolt3 = @junvolt3  %><%= junvolt3%></td><td><% juncur3 = @juncur3 %><%= juncur3%></td></tr>
+                      <tr><td>4</td><td><% junvolt4 = @junvolt4  %><%= junvolt4%></td><td><% juncur4 = @juncur4 %><%= juncur4%></td></tr>
+                      <tr><td>5</td><td><% junvolt5 = @junvolt5  %><%= junvolt5%></td><td><% juncur5 = @juncur5 %><%= juncur5%></td></tr>
+                      <tr><td>6</td><td><% junvolt6 = @junvolt6  %><%= junvolt6%></td><td><% juncur6 = @juncur6 %><%= juncur6%></td></tr>
+                      <tr><td>7</td><td><% junvolt7 = @junvolt7  %><%= junvolt7%></td><td><% juncur7 = @juncur7 %><%= juncur7%></td></tr>
+                      <tr><td>8</td><td><% junvolt8 = @junvolt8  %><%= junvolt8%></td><td><% juncur8 = @juncur8 %><%= juncur8%></td></tr>
+                      <tr><td>9</td><td><% junvolt9 = @junvolt9  %><%= junvolt9%></td><td><% juncur9 = @juncur9 %><%= juncur9%></td></tr>
+                      <tr><td>10</td><td><% junvolt10 = @junvolt10  %><%= junvolt10%></td><td><% juncur10 = @juncur10 %><%= juncur10%></td></tr>
+                      <tr><td>11</td><td><% junvolt11 = @junvolt11  %><%= junvolt11%></td><td><% juncur11 = @juncur11 %><%= juncur11%></td></tr>
+                      <tr><td>12</td><td><% junvolt12 = @junvolt12  %><%= junvolt12%></td><td><% juncur12 = @juncur12 %><%= juncur12%></td></tr>
+                      <tr><td>13</td><td><% junvolt13 = @junvolt13  %><%= junvolt13%></td><td><% juncur13 = @juncur13 %><%= juncur13%></td></tr>
+                      <tr><td>14</td><td><% junvolt14 = @junvolt14  %><%= junvolt14%></td><td><% juncur14 = @juncur14 %><%= juncur14%></td></tr>
+                      <tr><td>15</td><td><% junvolt15 = @junvolt15  %><%= junvolt15%></td><td><% juncur15 = @juncur15 %><%= juncur15%></td></tr>
+                      <tr><td>16</td><td><% junvolt16 = @junvolt16  %><%= junvolt16%></td><td><% juncur16 = @juncur16 %><%= juncur16%></td></tr>
+                      <tr><td>17</td><td><% junvolt17 = @junvolt17  %><%= junvolt17%></td><td><% juncur17 = @juncur17 %><%= juncur17%></td></tr>
+                      <tr><td>18</td><td><% junvolt18 = @junvolt18  %><%= junvolt18%></td><td><% juncur18 = @juncur18 %><%= juncur18%></td></tr>
+                      <tr><td>19</td><td><% junvolt19 = @junvolt19  %><%= junvolt19%></td><td><% juncur19 = @juncur19 %><%= juncur19%></td></tr>
+                      <tr><td>20</td><td><% junvolt20 = @junvolt20  %><%= junvolt20%></td><td><% juncur20 = @juncur20 %><%= juncur20%></td></tr>
+                      <tr><td>21</td><td><% junvolt21 = @junvolt21  %><%= junvolt21%></td><td><% juncur21 = @juncur21 %><%= juncur21%></td></tr>
+                      <tr><td>22</td><td><% junvolt22 = @junvolt22  %><%= junvolt22%></td><td><% juncur22 = @juncur22 %><%= juncur22%></td></tr>
+                      <tr><td>23</td><td><% junvolt23 = @junvolt23  %><%= junvolt23%></td><td><% juncur23 = @juncur23 %><%= juncur23%></td></tr>
+                      <tr><td>24</td><td><% junvolt24 = @junvolt24  %><%= junvolt24%></td><td><% juncur24 = @juncur24 %><%= juncur24%></td></tr>
+                      <tr><td>25</td><td><% junvolt25 = @junvolt25  %><%= junvolt25%></td><td><% juncur25 = @juncur25 %><%= juncur25%></td></tr>
+                      <tr><td>26</td><td><% junvolt26 = @junvolt26  %><%= junvolt26%></td><td><% juncur26 = @juncur26 %><%= juncur26%></td></tr>
+                      <tr><td>27</td><td><% junvolt27 = @junvolt27  %><%= junvolt27%></td><td><% juncur27 = @juncur27 %><%= juncur27%></td></tr>
+                      <tr><td>28</td><td><% junvolt28 = @junvolt28  %><%= junvolt28%></td><td><% juncur28 = @juncur28 %><%= juncur28%></td></tr>
+                      <tr><td>29</td><td><% junvolt29 = @junvolt29  %><%= junvolt29%></td><td><% juncur29 = @juncur29 %><%= juncur29%></td></tr>
+                      <tr><td>30</td><td><% junvolt30 = @junvolt30  %><%= junvolt30%></td><td><% juncur30 = @juncur30 %><%= juncur30%></td></tr>
+                      <tr><td>31</td><td><% junvolt31 = @junvolt31  %><%= junvolt31%></td><td><% juncur31 = @juncur31 %><%= juncur31%></td></tr>
+                  </tbody>
+              </table>
+          </div>
+      </center>
+  </div>
+
+  <div class="col">
+   <center>
+      <div class="col col-4">
+        <select class="form-control" id="foo">
+          <option value="select" selected>Select date...</option>
+          <option value="dec1" >1 JUNE 2017</option>
+          <option value="dec2">2 JUNE 2017</option>
+          <option value="dec3">3 JUNE 2017</option>
+          <option value="dec4">4 JUNE 2017</option>
+          <option value="dec5">5 JUNE 2017</option>
+          <option value="dec6">6 JUNE 2017</option>
+          <option value="dec7">7 JUNE 2017</option>
+          <option value="dec8">8 JUNE 2017</option>
+          <option value="dec9">9 JUNE 2017</option>
+          <option value="dec10">10 JUNE 2017</option>
+          <option value="dec11">11 JUNE 2017</option>
+          <option value="dec12">12 JUNE 2017</option>
+          <option value="dec13">13 JUNE 2017</option>
+          <option value="dec14">14 JUNE 2017</option>
+          <option value="dec15">15 JUNE 2017</option>
+          <option value="dec16">16 JUNE 2017</option>
+          <option value="dec17">17 JUNE 2017</option>
+          <option value="dec18">18 JUNE 2017</option>
+          <option value="dec19">19 JUNE 2017</option>
+          <option value="dec20">20 JUNE 2017</option>
+          <option value="dec21">21 JUNE 2017</option>
+          <option value="dec22">22 JUNE 2017</option>
+          <option value="dec23">23 JUNE 2017</option>
+          <option value="dec24">24 JUNE 2017</option>
+          <option value="dec25">25 JUNE 2017</option>
+          <option value="dec26">26 JUNE 2017</option>
+          <option value="dec27">27 JUNE 2017</option>
+          <option value="dec28">28 JUNE 2017</option>
+          <option value="dec29">29 JUNE 2017</option>
+          <option value="dec30">30 JUNE 2017</option>
+          <option value="dec31">31 JUNE 2017</option>
+        </select>
+        <br>
+      </div>
+    </center>
+</div>
+  </div>
+</div>
+<script>
+    document.getElementById("foo").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+<script>
+    document.getElementById("month").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+<script> 
+  var D = ['1', '2', '3','4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'];
+  var config = {
+    type: 'bar',
+    data: {
+      labels: D,
+      datasets: [{
+        label: 'Voltage',
+        backgroundColor: "#11f",
+        borderColor: "#11f",
+        data: [<%= junvolt1%>,<%= junvolt2%>,<%= junvolt3%>,<%= junvolt4%>,<%= junvolt5%>,<%= junvolt6%>,
+        <%= junvolt7%>,<%= junvolt8%>,<%= junvolt9%>,<%= junvolt10%>,<%= junvolt11%>,<%= junvolt12%>,
+        <%= junvolt13%>,<%= junvolt14%>,<%= junvolt15%>,<%= junvolt16%>,<%= junvolt17%>,<%= junvolt18%>,
+        <%= junvolt19%>,<%= junvolt20%>,<%= junvolt21%>,<%= junvolt22%>,<%= junvolt23%>,<%= junvolt24%>,
+        <%= junvolt25%>,<%= junvolt26%>,<%= junvolt27%>,<%= junvolt28%>,<%= junvolt29%>,<%= junvolt30%>,<%= junvolt31%>],
+        fill: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Date'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Voltage(v)'
+          }
+        }]
+      }
+    }
+  };
+  var config2 = {
+    type: 'bar',
+    data: {
+      labels: D,
+      datasets: [{
+        label: 'Current',
+        backgroundColor: "#a11",
+        borderColor: "#a11",
+        data: [<%= juncur1%>,<%= juncur2%>,<%= juncur3%>,<%= juncur4%>,<%= juncur5%>,<%= juncur6%>,
+        <%= juncur7%>,<%= juncur8%>,<%= juncur9%>,<%= juncur10%>,<%= juncur11%>,<%= juncur12%>,
+        <%= juncur13%>,<%= juncur14%>,<%= juncur15%>,<%= juncur16%>,<%= juncur17%>,<%= juncur18%>,
+        <%= juncur19%>,<%= juncur20%>,<%= juncur21%>,<%= juncur22%>,<%= juncur23%>,<%= juncur24%>,
+        <%= juncur25%>,<%= juncur26%>,<%= juncur27%>,<%= juncur28%>,<%= juncur29%>,<%= juncur30%>,<%= juncur31%>],
+
+        fill: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Date'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Voltage(v)'
+          }
+        }]
+      }
+    }
+  };
+  
+  var ctx = document.getElementById('mycanvas').getContext('2d');
+  window.myLine = new Chart(ctx, config);
+  var ctx2 = document.getElementById('mycanvas2').getContext('2d');
+  window.myLine = new Chart(ctx2, config2);
+</script>  
+
+

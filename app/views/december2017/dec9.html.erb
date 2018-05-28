@@ -1,0 +1,256 @@
+
+<script type="text/javascript" src="http://iop.io/js/vendor/d3.v3.min.js"></script>
+<script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerEvents/pointerevents.js"></script>
+<script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerGestures/pointergestures.js"></script>
+<script type="text/javascript" src="http://iop.io/js/iopctrl.js"></script>
+<script type="text/javascript" src="http://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+<div class="row">
+  <div class="col col-12">
+    <%= image_tag  "sun.png", height: '45', width: '45' %>
+    <div class="daytime">
+      <span id="date"></span>
+      <span id="timenav"></span>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <center>
+      <div class="col col-4">
+        <select class="form-control" id="month">
+          <option value="select" selected>Select month...</option>
+          <option value="history">DECEMBER 2018</option>
+          <option value="january2018">JANUARY 2018</option>
+          <option value="february2018">FEBRUARY 2018</option>
+          <option value="march2018">MARCH 2018</option>
+          <option value="april2018">APRIL 2018</option>
+          <option value="may2018">MAY 2018</option>
+          <option value="june2018">JUNE 2018</option>
+          <option value="july2018">JULY 2018</option>
+          <option value="august2018">AUGUST 2018</option>
+          <option value="september2018">SEPTEMBER 2018</option>
+          <option value="october2018">OCTOBER 2018</option>
+          <option value="november2018">NOVEMBER 2018</option>
+          <option value="december2018">DECEMBER 2018</option>
+        </select>
+        <br>
+      </div>
+    </center>
+  </div>
+</div>
+<br>
+<div class="row">
+    <div class="col">
+        <center>
+            <span>
+                <p class="value1">DECEMBER 2017</p>
+            <span>
+        </center>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class= "col" >
+        <canvas id="mycanvas"  width="100px" height="50px"></canvas>
+    </div>
+    <div class= "col" >
+        <canvas id="mycanvas2"  width="100px" height="50px"></canvas>
+    </div>
+</div>
+
+<br>
+
+<!--Table-->
+<div class="row">
+<!--Table day-->
+  <div class="col col-sm-6">
+      <center>
+          <div>
+              <table class="table table-hover table-striped">
+                  <thead class="thead-dark">
+                      <tr>
+                          <th>Date</th>
+                          <th>AVG Voltage (v)</th>
+                          <th>AVG Current (mA)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr><td>1</td><td><% decday1 = @decday1 %><%= decday1%></td><td><% decdaycur1 = @decdaycur1 %><%= decdaycur1%></td></tr>
+                      <tr><td>2</td><td><% decday2 = @decday2  %><%= decday2%></td><td><% decdaycur2 = @decdaycur2 %><%= decdaycur2%></td></tr>
+                      <tr><td>3</td><td><% decday3 = @decday3  %><%= decday3%></td><td><% decdaycur3 = @decdaycur3 %><%= decdaycur3%></td></tr>
+                      <tr><td>4</td><td><% decday4 = @decday4  %><%= decday4%></td><td><% decdaycur4 = @decdaycur4 %><%= decdaycur4%></td></tr>
+                      <tr><td>5</td><td><% decday5 = @decday5  %><%= decday5%></td><td><% decdaycur5 = @decdaycur5 %><%= decdaycur5%></td></tr>
+                      <tr><td>6</td><td><% decday6 = @decday6  %><%= decday6%></td><td><% decdaycur6 = @decdaycur6 %><%= decdaycur6%></td></tr>
+                      <tr><td>7</td><td><% decday7 = @decday7  %><%= decday7%></td><td><% decdaycur7 = @decdaycur7 %><%= decdaycur7%></td></tr>
+                      <tr><td>8</td><td><% decday8 = @decday8  %><%= decday8%></td><td><% decdaycur8 = @decdaycur8 %><%= decdaycur8%></td></tr>
+                      <tr><td>9</td><td><% decday9 = @decday9  %><%= decday9%></td><td><% decdaycur9 = @decdaycur9 %><%= decdaycur9%></td></tr>
+                      <tr><td>10</td><td><% decday10 = @decday10  %><%= decday10%></td><td><% decdaycur10 = @decdaycur10 %><%= decdaycur10%></td></tr>
+                      <tr><td>11</td><td><% decday11 = @decday11  %><%= decday11%></td><td><% decdaycur11 = @decdaycur11 %><%= decdaycur11%></td></tr>
+                      <tr><td>12</td><td><% decday12 = @decday12  %><%= decday12%></td><td><% decdaycur12 = @decdaycur12 %><%= decdaycur12%></td></tr>
+                      <tr><td>13</td><td><% decday13 = @decday13  %><%= decday13%></td><td><% decdaycur13 = @decdaycur13 %><%= decdaycur13%></td></tr>
+                      <tr><td>14</td><td><% decday14 = @decday14  %><%= decday14%></td><td><% decdaycur14 = @decdaycur14 %><%= decdaycur14%></td></tr>
+                      <tr><td>15</td><td><% decday15 = @decday15  %><%= decday15%></td><td><% decdaycur15 = @decdaycur15 %><%= decdaycur15%></td></tr>
+                      <tr><td>16</td><td><% decday16 = @decday16  %><%= decday16%></td><td><% decdaycur16 = @decdaycur16 %><%= decdaycur16%></td></tr>
+                      <tr><td>17</td><td><% decday17 = @decday17  %><%= decday17%></td><td><% decdaycur17 = @decdaycur17 %><%= decdaycur17%></td></tr>
+                      <tr><td>18</td><td><% decday18 = @decday18  %><%= decday18%></td><td><% decdaycur18 = @decdaycur18 %><%= decdaycur18%></td></tr>
+                      <tr><td>19</td><td><% decday19 = @decday19  %><%= decday19%></td><td><% decdaycur19 = @decdaycur19 %><%= decdaycur19%></td></tr>
+                      <tr><td>20</td><td><% decday20 = @decday20  %><%= decday20%></td><td><% decdaycur20 = @decdaycur20 %><%= decdaycur20%></td></tr>
+                      <tr><td>21</td><td><% decday21 = @decday21  %><%= decday21%></td><td><% decdaycur21 = @decdaycur21 %><%= decdaycur21%></td></tr>
+                      <tr><td>22</td><td><% decday22 = @decday22  %><%= decday22%></td><td><% decdaycur22 = @decdaycur22 %><%= decdaycur22%></td></tr>
+                      <tr><td>23</td><td><% decday23 = @decday23  %><%= decday23%></td><td><% decdaycur23 = @decdaycur23 %><%= decdaycur23%></td></tr>
+                      <tr><td>24</td><td><% decday24 = @decday24  %><%= decday24%></td><td><% decdaycur24 = @decdaycur24 %><%= decdaycur24%></td></tr>
+                      <tr><td>25</td><td><% decday25 = @decday25  %><%= decday25%></td><td><% decdaycur25 = @decdaycur25 %><%= decdaycur25%></td></tr>
+                      <tr><td>26</td><td><% decday26 = @decday26  %><%= decday26%></td><td><% decdaycur26 = @decdaycur26 %><%= decdaycur26%></td></tr>
+                      <tr><td>27</td><td><% decday27 = @decday27  %><%= decday27%></td><td><% decdaycur27 = @decdaycur27 %><%= decdaycur27%></td></tr>
+                      <tr><td>28</td><td><% decday28 = @decday28  %><%= decday28%></td><td><% decdaycur28 = @decdaycur28 %><%= decdaycur28%></td></tr>
+                      <tr><td>29</td><td><% decday29 = @decday29  %><%= decday29%></td><td><% decdaycur29 = @decdaycur29 %><%= decdaycur29%></td></tr>
+                      <tr><td>30</td><td><% decday30 = @decday30  %><%= decday30%></td><td><% decdaycur30 = @decdaycur30 %><%= decdaycur30%></td></tr>
+                      <tr><td>31</td><td><% decday31 = @decday31  %><%= decday31%></td><td><% decdaycur31 = @decdaycur31 %><%= decdaycur31%></td></tr>
+                  </tbody>
+              </table>
+          </div>
+      </center>
+  </div>
+
+  <div class="col">
+    <center>
+      <div class="col col-4">
+        <select class="form-control" id="foo">
+          <option value="select">Select date...</option>
+          <option value="select">Select date...</option>
+          <option value="dec1">1 December 2017</option>
+          <option value="dec2">2 December 2017</option>
+          <option value="dec3">3 December 2017</option>
+          <option value="dec4">4 December 2017</option>
+          <option value="dec5">5 December 2017</option>
+          <option value="dec6">6 December 2017</option>
+          <option value="dec7">7 Decembe 2017</option>
+          <option value="dec8">8 December 2017</option>
+          <option value="dec9" selected>9 December 2017</option>
+          <option value="dec10">10 December 2017</option>
+          <option value="dec11">11 December 2017</option>
+          <option value="dec12">12 December 2017</option>
+          <option value="dec13">13 December 2017</option>
+          <option value="dec14">14 December 2017</option>
+          <option value="dec15">15 December 2017</option>
+          <option value="dec16">16 December 2017</option>
+          <option value="dec17">17 December 2017</option>
+          <option value="dec18">18 December 2017</option>
+          <option value="dec19">19 December 2017</option>
+          <option value="dec20">20 December 2017</option>
+          <option value="dec21">21 December 2017</option>
+          <option value="dec22">22 December 2017</option>
+          <option value="dec23">23 December 2017</option>
+          <option value="dec24">24 December 2017</option>
+          <option value="dec25">25 December 2017</option>
+          <option value="dec26">26 December 2017</option>
+          <option value="dec27">27 December 2017</option>
+          <option value="dec28">28 December 2017</option>
+          <option value="dec29">29 December 2017</option>
+          <option value="dec30">30 December 2017</option>
+          <option value="dec31">31 December 2017</option>
+        </select>
+        <br>
+      </div>
+      <div class="row"><div class="col col-xs-11"><canvas id="mycanvas1volt"  width="150px" height="60px"></canvas></div></div>
+      <div class="row"><div class="col col-xs-11"><canvas id="mycanvas1cur"  width="150px" height="60px"></canvas></div></div>
+    </center>
+</div>
+  </div>
+</div>
+<script>
+    document.getElementById("foo").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+ <script>
+    document.getElementById("month").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+<script> 
+  var D = ['1', '2', '3','4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'];
+  var config = {
+    type: 'bar',
+    data: {
+      labels: D,
+      datasets: [{
+        label: 'Voltage',
+        backgroundColor: "#11f",
+        borderColor: "#11f",
+        data: [<%= decday1%>,<%= decday2%>,<%= decday3%>,<%= decday4%>,<%= decday5%>,<%= decday6%>,
+        <%= decday7%>,<%= decday8%>,<%= decday9%>,<%= decday10%>,<%= decday11%>,<%= decday12%>,
+        <%= decday13%>,<%= decday14%>,<%= decday15%>,<%= decday16%>,<%= decday17%>,<%= decday18%>,
+        <%= decday19%>,<%= decday20%>,<%= decday21%>,<%= decday22%>,<%= decday23%>,<%= decday24%>,
+        <%= decday25%>,<%= decday26%>,<%= decday27%>,<%= decday28%>,<%= decday29%>,<%= decday30%>,<%= decday31%>],
+        fill: false,
+      }]
+    },
+    options: {responsive: true,title: {display: true,},tooltips: {mode: 'index',intersect: false,}, hover: {mode: 'nearest',intersect: true},scales: {
+        xAxes: [{display: true, scaleLabel: { display: true,labelString: 'Date' } }],
+        yAxes: [{display: true,scaleLabel: {display: true,labelString: 'Voltage(v)'}}]
+      }
+    }
+  };
+  var config2 = {
+    type: 'bar',
+    data: {
+      labels: D,
+      datasets: [{
+        label: 'Current',
+        backgroundColor: "#a11",
+        borderColor: "#a11",
+        data: [<%= decdaycur1%>,<%= decdaycur2%>,<%= decdaycur3%>,<%= decdaycur4%>,<%= decdaycur5%>,<%= decdaycur6%>,
+        <%= decdaycur7%>,<%= decdaycur8%>,<%= decdaycur9%>,<%= decdaycur10%>,<%= decdaycur11%>,<%= decdaycur12%>,
+        <%= decdaycur13%>,<%= decdaycur14%>,<%= decdaycur15%>,<%= decdaycur16%>,<%= decdaycur17%>,<%= decdaycur18%>,
+        <%= decdaycur19%>,<%= decdaycur20%>,<%= decdaycur21%>,<%= decdaycur22%>,<%= decdaycur23%>,<%= decdaycur24%>,
+        <%= decdaycur25%>,<%= decdaycur26%>,<%= decdaycur27%>,<%= decdaycur28%>,<%= decdaycur29%>,<%= decdaycur30%>,<%= decdaycur31%>],
+
+        fill: false,
+      }]
+    },
+    options: {responsive: true, title: { display: true, }, tooltips: { mode: 'index', intersect: false, }, hover: { mode: 'nearest',intersect: true }, scales: {
+        xAxes: [{display: true, scaleLabel: {display: true,labelString: 'Date' }}],
+        yAxes: [{display: true,scaleLabel: { display: true,labelString: 'Voltage(v)'}}]
+      }
+    }
+  };
+  var T1 = [<% for app in @search9%>"<%= app.created_at.strftime("%I:%M %p") %>",<%end%>];
+  var config1volt = {
+    type: 'line',
+    data: {
+      labels: T1,
+      datasets: [{label: 'Voltage', backgroundColor: "#11a", borderColor: "#11a",data: [<% for app in @search9%><%= app.Voltage %>,<%end%>],fill: false,}]
+    },
+    options: {responsive: true,scales: {
+        xAxes: [{display: true,scaleLabel: {display: true,labelString: 'Time'}}],
+        yAxes: [{display: true,scaleLabel: {display: true,labelString: 'Voltage(v)'}}]
+      }
+    }
+  };
+  var config1cur = {
+    type: 'line',
+    data: {
+      labels: T1,
+      datasets: [{label: 'Current',backgroundColor: "#a11",borderColor: "#a11", data: [<% for app in @search9%><%= app.Current %>,<%end%>],fill: false,}]
+    },
+    options: {responsive: true,scales: {
+        xAxes: [{display: true,scaleLabel: {display: true,labelString: 'Time'}}],
+        yAxes: [{display: true,scaleLabel: {display: true,labelString: 'Current(mA)'}}]
+      }
+    }
+  };
+
+  var ctx = document.getElementById('mycanvas').getContext('2d');
+  window.myLine = new Chart(ctx, config);
+  var ctx2 = document.getElementById('mycanvas2').getContext('2d');
+  window.myLine = new Chart(ctx2, config2);
+  var ctx1volt = document.getElementById('mycanvas1volt').getContext('2d');
+  window.myLine = new Chart(ctx1volt, config1volt);
+  var ctx1cur = document.getElementById('mycanvas1cur').getContext('2d');
+  window.myLine = new Chart(ctx1cur, config1cur);
+</script>  

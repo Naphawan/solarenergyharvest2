@@ -1,3 +1,159 @@
 // Place all the styles related to the Apps controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// import bootstrap-sprockets before bootstrap if using bootstrap >= 3.2
+
+.center {
+    text-align: center;
+}
+body {
+   
+    font: 16px arial;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*****************************/
+/* css formats for the gauge */
+/*****************************/
+.gauge .domain {
+    stroke-width: 2px;
+    stroke: #000;
+}
+
+.gauge .tick line {
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.gauge line {
+    stroke: #000;
+}
+
+.gauge .arc, .gauge .cursor {
+    opacity: 0;
+}
+
+.gauge .major {
+    fill: #000;
+    font-size: 20px;
+    font-family: 'Play', verdana, sans-serif;
+    font-weight: normal;
+}
+/*********************************/
+/*** css formats for indicator ***/
+/*********************************/
+.gauge .indicator {
+    stroke: #EE3311;
+    fill: #000;
+    stroke-width: 4px;
+}
+/***************************************/
+/* css formats for the segment display */
+/***************************************/
+.segdisplay .on {
+    fill: #0000cc;
+}
+.segdisplay .off {
+    fill: #0000;
+    opacity: 1;
+}
+.liquidFillGaugeText { 
+    font-family: Helvetica; 
+    font-weight: bold;
+}
+
+// #date
+// {
+// 	margin-top:10px;
+// 	color:black;
+// 	font-size:20px;
+// }
+// #timenav
+// {
+// 	margin-top:10px;
+// 	font-size:20px;
+// 	color:black;
+// }
+.daytime{
+    margin-top:10px;
+	font-size:20px;
+	color:black;
+    float: right;
+}
+.value{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 200px;
+    margin: -3px;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font: normal normal 25px/1 "Lucida Grande", Monaco, monospace;;
+    color: rgba(252,244,244,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(55,58,61,1);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 0 0 0 rgba(167,171,188,0.8) ;
+    margin: 0px 0px 0px 105px;
+}
+.value1{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 200px;
+    margin: -3px;
+    padding: 8px;
+    overflow: hidden;
+    border: none;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font: normal normal 25px/1 "Lucida Grande", Monaco, monospace;;
+    color: rgba(252,244,244,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(55,58,61,1);
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 0 0 0 rgba(167,171,188,0.8) ;
+ 
+}
+
+
+.alignleft{
+    font: 20px bold, sans-serif;
+    float: left;
+    margin: -35px 0px 0px 110px;
+
+
+}
+.alignright{
+    font: 20px bold, sans-serif;
+    float: right;
+    margin: -35px 110px 0px 0px;
+}
+
+.charging{
+    margin-top:15px;
+    margin-left:10px;
+    font-size: 20px;
+    color:black;
+}
+.button{
+
+}
