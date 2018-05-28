@@ -63,9 +63,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay1 = App.where("created_at LIKE '%2018-05-01%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay1 = App.where("created_at LIKE '%2018-05-01%'").order(created_at: :asc
+      # ).where('id % ? = 1',60)
   end
-
   def may2
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -130,9 +130,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay2 = App.where("created_at LIKE '%2018-05-02%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay2 = App.where("created_at LIKE '%2018-05-02%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
-
   def may3
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -197,9 +197,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay3 = App.where("created_at LIKE '%2018-05-03%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay3 = App.where("created_at LIKE '%2018-05-03%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
-
   def may4
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -264,9 +264,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay4 = App.where("created_at LIKE '%2018-05-04%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay4 = App.where("created_at LIKE '%2018-05-04%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
-
   def may5
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -331,9 +331,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay5 = App.where("created_at LIKE '%2018-05-05%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay5 = App.where("created_at LIKE '%2018-05-05%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
-
   def may6
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -398,9 +398,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay6 = App.where("created_at LIKE '%2018-05-06%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay6 = App.where("created_at LIKE '%2018-05-06%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
-
   def may7
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -465,9 +465,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay7 = App.where("created_at LIKE '%2018-05-07%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay7 = App.where("created_at LIKE '%2018-05-07%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
-
   def may8
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -532,9 +532,9 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay8 = App.where("created_at LIKE '%2018-05-08%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay8 = App.where("created_at LIKE '%2018-05-08%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
-
   def may9
     @mayvolt1 = App.where("created_at LIKE '%2018-05-01%'").average('Voltage')
     @mayvolt2 = App.where("created_at LIKE '%2018-05-02%'").average('Voltage')
@@ -599,7 +599,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay9 = App.where("created_at LIKE '%2018-05-09%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay9 = App.where("created_at LIKE '%2018-05-09%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may10
@@ -666,7 +667,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay10 = App.where("created_at LIKE '%2018-05-10%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay10 = App.where("created_at LIKE '%2018-05-10%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may11
@@ -733,7 +735,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay11 = App.where("created_at LIKE '%2018-05-11%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay11 = App.where("created_at LIKE '%2018-05-11%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may12
@@ -800,7 +803,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay12 = App.where("created_at LIKE '%2018-05-12%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay12 = App.where("created_at LIKE '%2018-05-12%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may13
@@ -867,7 +871,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay13 = App.where("created_at LIKE '%2018-05-13%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay13 = App.where("created_at LIKE '%2018-05-13%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may14
@@ -934,7 +939,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay14 = App.where("created_at LIKE '%2018-05-14%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay14 = App.where("created_at LIKE '%2018-05-14%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may15
@@ -1001,7 +1007,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay15 = App.where("created_at LIKE '%2018-05-15%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay15 = App.where("created_at LIKE '%2018-05-15%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may16
@@ -1068,7 +1075,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay16 = App.where("created_at LIKE '%2018-05-16%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay16 = App.where("created_at LIKE '%2018-05-16%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may17
@@ -1135,7 +1143,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay17 = App.where("created_at LIKE '%2018-05-17%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay17 = App.where("created_at LIKE '%2018-05-17%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may18
@@ -1202,7 +1211,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay18 = App.where("created_at LIKE '%2018-05-18%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay18 = App.where("created_at LIKE '%2018-05-18%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may19
@@ -1269,7 +1279,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay19 = App.where("created_at LIKE '%2018-05-19%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay19 = App.where("created_at LIKE '%2018-05-19%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may20
@@ -1336,7 +1347,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay20 = App.where("created_at LIKE '%2018-05-20%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay20 = App.where("created_at LIKE '%2018-05-20%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may21
@@ -1403,7 +1415,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay21 = App.where("created_at LIKE '%2018-05-21%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay21 = App.where("created_at LIKE '%2018-05-21%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may22
@@ -1470,7 +1483,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay22 = App.where("created_at LIKE '%2018-05-22%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay22 = App.where("created_at LIKE '%2018-05-22%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may23
@@ -1537,7 +1551,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay23 = App.where("created_at LIKE '%2018-05-23%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay23 = App.where("created_at LIKE '%2018-05-23%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
 
   end
 
@@ -1605,7 +1620,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay24 = App.where("created_at LIKE '%2018-05-24%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay24 = App.where("created_at LIKE '%2018-05-24%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may25
@@ -1672,7 +1688,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay25 = App.where("created_at LIKE '%2018-05-25%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay25 = App.where("created_at LIKE '%2018-05-25%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may26
@@ -1739,7 +1756,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay26 = App.where("created_at LIKE '%2018-05-26%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay26 = App.where("created_at LIKE '%2018-05-26%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may27
@@ -1806,7 +1824,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay27 = App.where("created_at LIKE '%2018-05-27%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay27 = App.where("created_at LIKE '%2018-05-27%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may28
@@ -1873,7 +1892,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay28 = App.where("created_at LIKE '%2018-05-28%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay28 = App.where("created_at LIKE '%2018-05-28%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
 
   end
 
@@ -1941,7 +1961,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay29 = App.where("created_at LIKE '%2018-05-29%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay29 = App.where("created_at LIKE '%2018-05-29%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 
   def may30
@@ -2008,7 +2029,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay30 = App.where("created_at LIKE '%2018-05-30%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay30 = App.where("created_at LIKE '%2018-05-30%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
 
   end
 
@@ -2076,7 +2098,8 @@ class May2018Controller < ApplicationController
     @maycur29 = App.where("created_at LIKE '%2018-05-29%'").average('Current')
     @maycur30 = App.where("created_at LIKE '%2018-05-30%'").average('Current')
     @maycur31 = App.where("created_at LIKE '%2018-05-31%'").average('Current')
-    @searchmay31 = App.where("created_at LIKE '%2018-05-31%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmay31 = App.where("created_at LIKE '%2018-05-31%'").order(created_at: :asc)
+    # .where('id % ? = 1',60)
   end
 end
 

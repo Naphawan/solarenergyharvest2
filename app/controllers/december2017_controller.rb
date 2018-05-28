@@ -1,6 +1,6 @@
 class December2017Controller < ApplicationController
   def dec1
-    @search1 = App.where("created_at LIKE '%2017-12-01%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search1 = App.where("created_at LIKE '%2017-12-01%'").order(created_at: :asc)#.where('id % ? = 1',60)
 
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
     @decday2 = App.where("created_at LIKE '%2017-12-02%'").average('Voltage')
@@ -130,7 +130,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search2 = App.where("created_at LIKE '%2017-12-02%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search2 = App.where("created_at LIKE '%2017-12-02%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec3
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -196,7 +196,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search3 = App.where("created_at LIKE '%2017-12-03%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search3 = App.where("created_at LIKE '%2017-12-03%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec4
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -262,7 +262,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search4 = App.where("created_at LIKE '%2017-12-04%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search4 = App.where("created_at LIKE '%2017-12-04%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec5
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -328,7 +328,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search5 = App.where("created_at LIKE '%2017-12-05%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search5 = App.where("created_at LIKE '%2017-12-05%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec6
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -394,7 +394,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search6 = App.where("created_at LIKE '%2017-12-06%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search6 = App.where("created_at LIKE '%2017-12-06%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec7
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -460,7 +460,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search7 = App.where("created_at LIKE '%2017-12-07%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search7 = App.where("created_at LIKE '%2017-12-07%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec8
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -526,7 +526,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search8 = App.where("created_at LIKE '%2017-12-08%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search8 = App.where("created_at LIKE '%2017-12-08%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec9
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -592,7 +592,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search9 = App.where("created_at LIKE '%2017-12-09%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search9 = App.where("created_at LIKE '%2017-12-09%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec10
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -658,7 +658,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search10 = App.where("created_at LIKE '%2017-12-10%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search10 = App.where("created_at LIKE '%2017-12-10%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec11
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -724,7 +724,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search11 = App.where("created_at LIKE '%2017-12-11%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search11 = App.where("created_at LIKE '%2017-12-11%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec12
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -790,7 +790,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search12 = App.where("created_at LIKE '%2017-12-12%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search12 = App.where("created_at LIKE '%2017-12-12%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec13
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -856,7 +856,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search13 = App.where("created_at LIKE '%2017-12-13%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search13 = App.where("created_at LIKE '%2017-12-13%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec14
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -922,7 +922,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search14 = App.where("created_at LIKE '%2017-12-14%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search14 = App.where("created_at LIKE '%2017-12-14%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec15
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -988,7 +988,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search15 = App.where("created_at LIKE '%2017-12-15%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search15 = App.where("created_at LIKE '%2017-12-15%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec16
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1054,7 +1054,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search16 = App.where("created_at LIKE '%2017-12-16%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search16 = App.where("created_at LIKE '%2017-12-16%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec17
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1120,7 +1120,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search17 = App.where("created_at LIKE '%2017-12-17%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search17 = App.where("created_at LIKE '%2017-12-17%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec18
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1186,7 +1186,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search18 = App.where("created_at LIKE '%2017-12-18%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search18 = App.where("created_at LIKE '%2017-12-18%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec19
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1252,7 +1252,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search19 = App.where("created_at LIKE '%2017-12-19%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search19 = App.where("created_at LIKE '%2017-12-19%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec20
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1318,7 +1318,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search20 = App.where("created_at LIKE '%2017-12-20%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search20 = App.where("created_at LIKE '%2017-12-20%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec21
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1384,7 +1384,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search21 = App.where("created_at LIKE '%2017-12-21%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search21 = App.where("created_at LIKE '%2017-12-21%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec22
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1450,7 +1450,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search22 = App.where("created_at LIKE '%2017-12-22%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search22 = App.where("created_at LIKE '%2017-12-22%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec23
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1516,7 +1516,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search23 = App.where("created_at LIKE '%2017-12-23%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search23 = App.where("created_at LIKE '%2017-12-23%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec24
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1582,7 +1582,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search24 = App.where("created_at LIKE '%2017-12-24%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search24 = App.where("created_at LIKE '%2017-12-24%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec25
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1648,7 +1648,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search25 = App.where("created_at LIKE '%2017-12-25%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search25 = App.where("created_at LIKE '%2017-12-25%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec26    
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1714,7 +1714,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search26 = App.where("created_at LIKE '%2017-12-26%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search26 = App.where("created_at LIKE '%2017-12-26%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec27    
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1780,7 +1780,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search27 = App.where("created_at LIKE '%2017-12-27%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search27 = App.where("created_at LIKE '%2017-12-27%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec28    
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1846,7 +1846,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search28 = App.where("created_at LIKE '%2017-12-28%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search28 = App.where("created_at LIKE '%2017-12-28%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec29    
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1912,7 +1912,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search29 = App.where("created_at LIKE '%2017-12-29%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search29 = App.where("created_at LIKE '%2017-12-29%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec30        
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -1978,7 +1978,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search30 = App.where("created_at LIKE '%2017-12-30%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search30 = App.where("created_at LIKE '%2017-12-30%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
   def dec31    
     @decday1 = App.where("created_at LIKE '%2017-12-01%'").average('Voltage')
@@ -2044,6 +2044,7 @@ class December2017Controller < ApplicationController
     @decdaycur29 = App.where("created_at LIKE '%2017-12-29%'").average('Current')
     @decdaycur30 = App.where("created_at LIKE '%2017-12-30%'").average('Current')
     @decdaycur31 = App.where("created_at LIKE '%2017-12-31%'").average('Current')
-    @search31 = App.where("created_at LIKE '%2017-12-31%'").order(created_at: :asc).where('id % ? = 1',60)
+    @search31 = App.where("created_at LIKE '%2017-12-31%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 end
+

@@ -63,7 +63,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar1 = App.where("created_at LIKE '%2018-03-01%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar1 = App.where("created_at LIKE '%2018-03-01%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar2
@@ -130,7 +130,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar2 = App.where("created_at LIKE '%2018-03-02%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar2 = App.where("created_at LIKE '%2018-03-02%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar3
@@ -197,7 +197,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar3 = App.where("created_at LIKE '%2018-03-03%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar3 = App.where("created_at LIKE '%2018-03-03%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar4
@@ -264,7 +264,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar4 = App.where("created_at LIKE '%2018-03-04%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar4 = App.where("created_at LIKE '%2018-03-04%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar5
@@ -331,7 +331,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar5 = App.where("created_at LIKE '%2018-03-05%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar5 = App.where("created_at LIKE '%2018-03-05%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar6
@@ -398,7 +398,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar6 = App.where("created_at LIKE '%2018-03-06%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar6 = App.where("created_at LIKE '%2018-03-06%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar7
@@ -465,7 +465,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar7 = App.where("created_at LIKE '%2018-03-07%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar7 = App.where("created_at LIKE '%2018-03-07%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar8
@@ -532,7 +532,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar8 = App.where("created_at LIKE '%2018-03-08%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar8 = App.where("created_at LIKE '%2018-03-08%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar9
@@ -599,7 +599,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar9 = App.where("created_at LIKE '%2018-03-09%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar9 = App.where("created_at LIKE '%2018-03-09%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar10
@@ -666,7 +666,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar10 = App.where("created_at LIKE '%2018-03-10%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar10 = App.where("created_at LIKE '%2018-03-10%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar11
@@ -733,7 +733,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar11 = App.where("created_at LIKE '%2018-03-11%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar11 = App.where("created_at LIKE '%2018-03-11%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar12
@@ -800,7 +800,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar12 = App.where("created_at LIKE '%2018-03-12%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar12 = App.where("created_at LIKE '%2018-03-12%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar13
@@ -867,7 +867,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar13 = App.where("created_at LIKE '%2018-03-13%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar13 = App.where("created_at LIKE '%2018-03-13%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar14
@@ -934,7 +934,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar14 = App.where("created_at LIKE '%2018-03-14%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar14 = App.where("created_at LIKE '%2018-03-14%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar15
@@ -1001,7 +1001,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar15 = App.where("created_at LIKE '%2018-03-15%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar15 = App.where("created_at LIKE '%2018-03-15%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar16
@@ -1068,7 +1068,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar16 = App.where("created_at LIKE '%2018-03-16%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar16 = App.where("created_at LIKE '%2018-03-16%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar17
@@ -1135,7 +1135,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar17 = App.where("created_at LIKE '%2018-03-17%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar17 = App.where("created_at LIKE '%2018-03-17%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar18
@@ -1202,7 +1202,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar18 = App.where("created_at LIKE '%2018-03-18%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar18 = App.where("created_at LIKE '%2018-03-18%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar19
@@ -1269,7 +1269,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar19 = App.where("created_at LIKE '%2018-03-19%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar19 = App.where("created_at LIKE '%2018-03-19%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar20
@@ -1336,7 +1336,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar20 = App.where("created_at LIKE '%2018-03-20%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar20 = App.where("created_at LIKE '%2018-03-20%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar21
@@ -1403,7 +1403,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar21 = App.where("created_at LIKE '%2018-03-21%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar21 = App.where("created_at LIKE '%2018-03-21%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar22
@@ -1470,7 +1470,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar22 = App.where("created_at LIKE '%2018-03-22%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar22 = App.where("created_at LIKE '%2018-03-22%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar23
@@ -1537,7 +1537,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar23 = App.where("created_at LIKE '%2018-03-23%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar23 = App.where("created_at LIKE '%2018-03-23%'").order(created_at: :asc)#.where('id % ? = 1',60)
 
   end
 
@@ -1605,7 +1605,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar24 = App.where("created_at LIKE '%2018-03-24%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar24 = App.where("created_at LIKE '%2018-03-24%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar25
@@ -1672,7 +1672,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar25 = App.where("created_at LIKE '%2018-03-25%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar25 = App.where("created_at LIKE '%2018-03-25%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar26
@@ -1739,7 +1739,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar26 = App.where("created_at LIKE '%2018-03-26%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar26 = App.where("created_at LIKE '%2018-03-26%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar27
@@ -1806,7 +1806,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar27 = App.where("created_at LIKE '%2018-03-27%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar27 = App.where("created_at LIKE '%2018-03-27%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 
   def mar28
@@ -1873,7 +1873,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar28 = App.where("created_at LIKE '%2018-03-28%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar28 = App.where("created_at LIKE '%2018-03-28%'").order(created_at: :asc)#.where('id % ? = 1',60)
 
   end
 
@@ -1941,9 +1941,8 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar29 = App.where("created_at LIKE '%2018-03-29%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar29 = App.where("created_at LIKE '%2018-03-29%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
-
   def mar30
     @marvolt1 = App.where("created_at LIKE '%2018-03-01%'").average('Voltage')
     @marvolt2 = App.where("created_at LIKE '%2018-03-02%'").average('Voltage')
@@ -2008,7 +2007,7 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar30 = App.where("created_at LIKE '%2018-03-30%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar30 = App.where("created_at LIKE '%2018-03-30%'").order(created_at: :asc)#.where('id % ? = 1',60)
 
   end
 
@@ -2076,6 +2075,6 @@ class March2018Controller < ApplicationController
     @marcur29 = App.where("created_at LIKE '%2018-03-29%'").average('Current')
     @marcur30 = App.where("created_at LIKE '%2018-03-30%'").average('Current')
     @marcur31 = App.where("created_at LIKE '%2018-03-31%'").average('Current')
-    @searchmar31 = App.where("created_at LIKE '%2018-03-31%'").order(created_at: :asc).where('id % ? = 1',60)
+    @searchmar31 = App.where("created_at LIKE '%2018-03-31%'").order(created_at: :asc)#.where('id % ? = 1',60)
   end
 end
